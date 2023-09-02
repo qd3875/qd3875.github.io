@@ -5,7 +5,7 @@
     <style>
         /* 新增顶栏样式 */
         .topbar {
-            background-color: #333;
+            background-color: rgba(52, 152, 219, 0.2); /* 半透明淡蓝色，透明度为0.4 */
             color: white;
             padding: 10px 0;
             position: fixed;
@@ -16,11 +16,13 @@
             justify-content: space-between;
             align-items: center;
             z-index: 999; /* 确保顶栏在最前面 */
+            border-radius: 10px; /* 添加圆角样式 */
+            backdrop-filter: blur(5px); /* 添加毛玻璃效果，可以根据需要调整模糊程度 */
         }
 
-        .topbar img {
-            max-width: 30px;
-            margin-left: 10px;
+        .topbar a {
+            color: white;
+            text-decoration: none;
         }
 
         body {
@@ -105,7 +107,5 @@
         </li>
         <!-- 添加更多音乐文件 -->
     </ul>
-
-    <img src="https://img1.imgtp.com/2023/09/02/kS37EQus.png" alt="底部图片">
 </body>
 </html>
