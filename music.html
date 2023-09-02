@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>音乐列表</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('https://api.maho.cc/random-img/pc.php');
+            background-size: cover;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        #title-image {
+            max-width: 40px;
+            margin-right: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        li {
+            background-color: rgba(255, 255, 255, 0.4);/* 半透明的背景颜色 */
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;/* 添加圆角样式 */
+            width: 100%; /* 初始宽度设置为100% */
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #git-gif {
+            max-width: 100%;
+        }
+
+        /* 媒体查询：当屏幕宽度大于768像素时，将li元素的宽度设置为45% */
+        @media screen and (min-width: 769px) {
+            li {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img id="title-image" src="https://img1.imgtp.com/2023/08/30/29kvOlOo.svg" alt="标题图像"> 音乐列表
+    </h1>
+
+    <ul>
+        <li>
+            <span>dj京仔-0.131 Baby Alice-Pina Colada Boy （dj京仔 remix）</span>
+            <audio controls>
+                <source src="music/DJ/dj京仔-0.131 Baby Alice-Pina Colada Boy （dj京仔 remix）.mp3" type="audio/mpeg">
+                您的浏览器不支持音频标签。
+            </audio>
+        </li>
+        <li>
+            <span>歌曲2</span>
+            <audio controls>
+                <source src="music/song2.mp3" type="audio/mpeg">
+                您的浏览器不支持音频标签。
+            </audio>
+        </li>
+        <!-- 添加更多音乐文件 -->
+    </ul>
+
+    <img " src="https://i0.hdslb.com/bfs/article/02db465212d3c374a43c60fa2625cc1caeaab796.png" alt="">
+
+</body>
+</html>
