@@ -3,12 +3,32 @@
 <head>
     <title>音乐快取</title>
     <style>
+        /* 新增顶栏样式 */
+        .topbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999; /* 确保顶栏在最前面 */
+        }
+
+        .topbar img {
+            max-width: 30px;
+            margin-left: 10px;
+        }
+
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             background-image: url('https://api.maho.cc/random-img/pc.php');
             background-size: cover;
-            padding: 20px;
+            padding: 70px 20px 20px; /* 调整页面顶部留出顶栏高度 */
             margin: 0;
         }
 
@@ -16,6 +36,7 @@
             color: #333;
             display: flex;
             align-items: center;
+            margin-bottom: 20px;
         }
 
         #title-image {
@@ -32,12 +53,12 @@
         }
 
         li {
-            background-color: rgba(255, 255, 255, 0.4);/* 半透明的背景颜色 */
+            background-color: rgba(255, 255, 255, 0.4);
             margin-bottom: 10px;
             padding: 10px;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-            border-radius: 15px;/* 添加圆角样式 */
-            width: 100%; /* 初始宽度设置为100% */
+            border-radius: 15px;
+            width: 100%;
         }
 
         audio {
@@ -58,6 +79,11 @@
     </style>
 </head>
 <body>
+    <!-- 顶栏 -->
+    <div class="topbar">
+        <a href="https://img1.imgtp.com/2023/08/30/7voiGXU9.svg" target="_blank"><img src="https://i.nsoer.top/" alt="返回"></a>
+    </div>
+
     <h1>
         <img id="title-image" src="https://img1.imgtp.com/2023/08/30/29kvOlOo.svg" alt="标题图像"> 音乐列表 | 如需持久访问，请在域名后加上music
     </h1>
@@ -80,7 +106,6 @@
         <!-- 添加更多音乐文件 -->
     </ul>
 
-    <img " src="https://img1.imgtp.com/2023/09/02/kS37EQus.png" alt="">
-
+    <img src="https://img1.imgtp.com/2023/09/02/kS37EQus.png" alt="底部图片">
 </body>
 </html>
